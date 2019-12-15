@@ -1,6 +1,3 @@
-body {
-    margin: 0;
-}
 
 .card {
     background-color: #FFF;
@@ -242,7 +239,7 @@ body {
 
 .card-content h3 {
     position: relative;
-    font-size: 24px;
+    font-size: 36px;
     cursor: pointer;
 }
 
@@ -264,22 +261,24 @@ body {
     overflow: hidden;
 }
 
-.content-section>* {
+.content-section>* p, .content-section > h3{
     margin: 5% 8%;
 }
 
 .content-section .folding-container {
     max-height: 3000px;
-    margin: 0;
     overflow: hidden;
-    transition: all 380ms ease-in-out;
+    transition: margin 1ms ease-in-out, max-height 380ms ease-in-out 1ms;    
 }
 
 .content-section--folded .folding-container {
     max-height: 0;
+    margin: 0;
+    transition: max-height 380ms ease-in-out, margin 1ms ease-in-out 380ms;    
+
 }
 
-.content-section h3 {
+.content-section:not(:first-child) h3 {
     border-top: 1px solid #251B34;
     padding-top: 32px;
     font-size: 36px;
@@ -798,17 +797,11 @@ body {
         width: 30%;
         border-radius: 5px 0 0 5px;
         overflow: hidden;
-        position: fixed;
+        position: absolute;
         right: 0;
-        top: 20vh;
+        top: 50vh;
         max-width: 430px;
         overflow-y: scroll;
-    }
-}
-
-@media screen and (min-width: 500px) and (min-height: 800px) {
-    .character-info {
-        top: 30vh;
     }
 }
 
