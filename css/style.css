@@ -771,7 +771,7 @@
         height: 150px;
         padding: 0;
     }
-    .player-info {
+    .player-info, .cloth-list {
         margin-left: 0;
     }
 
@@ -816,6 +816,9 @@
         max-width: 430px;
         overflow-y: scroll;
     }
+    .cloth-list{
+        width: 33.33%;
+    }
 }
 
 @media screen and (min-width: 720px) {
@@ -835,7 +838,7 @@
     .card-content h2 {
         font-size: 80px;
     }
-    .player-list {
+    .player-list, .cloth-list {
         flex-direction: row;
         border-radius: 0 5px 0 0;
         margin-left: 0;
@@ -843,6 +846,9 @@
     }
     .player-list__item {
         width: 33.3%;
+    }
+    .cloth-list{
+        width: 25%;
     }
     .badge {
         padding-bottom: 23%;
