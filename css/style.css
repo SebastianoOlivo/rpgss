@@ -321,6 +321,18 @@
     box-sizing: border-box;
 }
 
+.cloth-list__item{
+    background-color: #FFF;
+    border-radius: 4px;
+}
+
+.cloth-list__item img{
+    width: 110px;
+    height: 110px;
+    border-radius: 110px;
+
+}
+
 .player-list strong, .cloth-list strong {
     display: block;
 }
