@@ -261,9 +261,15 @@
     overflow: hidden;
 }
 
-.content-section>* p, .content-section > h3{
+.content-section>* p:not(img),
+.content-section > h3,
+.content-section > .attaque-list,
+.content-section > .badge-list,
+.content-section > .states{
     margin: 5% 8%;
 }
+
+
 
 .content-section .folding-container {
     max-height: 3000px;
@@ -284,7 +290,7 @@
     font-size: 36px;
 }
 
-[class$="--dark"] .content-section h3 {
+[class$="--dark"] .content-section:not(:first-child) h3 {
     border-top: 1px solid #C079FF;
 }
 
@@ -416,6 +422,8 @@
     margin: 0;
 }
 
+
+
 .attaque-info {
     margin: 0;
 }
@@ -436,7 +444,7 @@
 }
 
 .attaque-info__description {
-    margin: 5px 0;
+    margin-left:0 !important;
 }
 
 .attaque-info__state {
@@ -652,6 +660,10 @@
     justify-content: space-between;
 }
 
+.states .chart-container:first-child{
+    padding-left: 0;    
+}
+
 .chart-container{
     width: 100%;
     margin-bottom: 20px;
@@ -765,6 +777,7 @@
 
     .attaque {
         flex-direction: row;
+        align-items: center;
     }
     .attaque-info {
         width: calc(100% - 120px);
