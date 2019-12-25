@@ -816,7 +816,7 @@
         max-width: 430px;
         overflow-y: scroll;
     }
-    .cloth-list{
+    .cloth-list__item{
         width: 33.33%;
     }
 }
@@ -847,7 +847,7 @@
     .player-list__item {
         width: 33.3%;
     }
-    .cloth-list{
+    .cloth-list__item{
         width: 25%;
     }
     .badge {
